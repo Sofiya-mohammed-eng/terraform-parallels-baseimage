@@ -79,7 +79,7 @@ with zero manual VM configuration in Parallels' GUI.
 - [x] Reusable `ubuntu-vm` module
 - [x] First server (`web-server`) built, destroyed, and rebuilt via Terraform
 - [x] DNS server (BIND9, authoritative zone `lab.local`, resolving via Terraform-built VM)
-- [ ] DHCP server
+- [x] DHCP server (isc-dhcp-server, valid subnet config, kept offline to avoid conflicting with host DHCP)
 - [ ] Additional server types
 - [ ] Multi-environment support (dev / staging / production) via workspaces or `.tfvars`
 - [ ] Automated infrastructure testing (`terraform validate`, `tflint`, Terratest/InSpec)

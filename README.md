@@ -79,7 +79,7 @@ with zero manual VM configuration in Parallels' GUI.
 - [x] Provider authentication working against local `prldevops` API
 - [x] Reusable `ubuntu-vm` module
 - [x] First server (`web-server`) built, destroyed, and rebuilt via Terraform
-- [ ] DNS server
+- [x] DNS server (BIND9, authoritative zone `lab.local`, resolving via Terraform-built VM)
 - [ ] DHCP server
 - [ ] Additional server types
 - [ ] Multi-environment support (dev / staging / production) via workspaces or `.tfvars`

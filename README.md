@@ -36,11 +36,10 @@ Each server type (web, DNS, DHCP, etc.) lives in its own folder and simply calls
 
 ## Prerequisites
 
-- macOS with [Parallels Desktop](https://www.parallels.com/products/desktop/) (Pro/Business edition — required for the DevOps API and Vagrant provider)
+- macOS with [Parallels Desktop](https://www.parallels.com/products/desktop/) (with the DevOps API and Vagrant provider enabled)
 - [Parallels DevOps Service](https://github.com/Parallels/prl-devops-service) (`prldevops`) installed and running locally
 - [Terraform](https://developer.hashicorp.com/terraform/install) v1.15+
 - [Vagrant](https://developer.hashicorp.com/vagrant/install) with the `vagrant-parallels` plugin (`vagrant plugin install vagrant-parallels`)
-- A Parallels Desktop Pro/Business license key
 
 ## Setup
 

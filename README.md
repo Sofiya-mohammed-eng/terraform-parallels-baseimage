@@ -81,7 +81,7 @@ with zero manual VM configuration in Parallels' GUI.
 - [x] DNS server (BIND9, authoritative zone `lab.local`, resolving via Terraform-built VM)
 - [x] DHCP server (isc-dhcp-server, valid subnet config, kept offline to avoid conflicting with host DHCP)
 - [ ] Additional server types
-- [ ] Multi-environment support (dev / staging / production) via workspaces or `.tfvars`
+- [x] Multi-environment support (dev/staging as separate Terraform states, each with independent VMs; state migrated to HCP Terraform for both)
 - [ ] Automated infrastructure testing (`terraform validate`, `tflint`, Terratest/InSpec)
 - [ ] CI pipeline (GitHub Actions) running plan/validate on every push
 

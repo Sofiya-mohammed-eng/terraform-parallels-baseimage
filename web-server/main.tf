@@ -14,8 +14,11 @@ provider "parallels-desktop" {
 module "web_server" {
   source = "../modules/ubuntu-vm"
 
-  vm_name             = "web-server-01"
+  vm_name             = "web-server-${var.environment}"
   parallels_host      = "${var.parallels_host}:${var.parallels_port}"
   parallels_username  = var.parallels_username
   parallels_password  = var.parallels_password
+  cpu_count           = var.vm_cpu_count
+  memory_size         = var.vm_memory_size
+  disk_size           = var.vm_disk_size
 }

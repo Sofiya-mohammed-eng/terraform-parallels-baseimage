@@ -1,4 +1,12 @@
 terraform {
+  cloud {
+    organization = "sofiya-sec"
+
+    workspaces {
+      name = "web-server-dev"
+    }
+  }
+
   required_providers {
     parallels-desktop = {
       source = "Parallels/parallels-desktop"

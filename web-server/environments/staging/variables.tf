@@ -27,12 +27,6 @@ variable "parallels_license" {
   sensitive   = true
 }
 
-variable "environment" {
-  description = "Deployment environment: dev, staging, or production"
-  type        = string
-  default     = "dev"
-}
-
 variable "vm_cpu_count" {
   description = "vCPU count for this environment"
   type        = string
@@ -51,8 +45,3 @@ variable "vm_disk_size" {
   default     = "20480"
 }
 
-variable "vm_keep_running" {
-  description = "Prevent accidental destroy by keeping VM running after apply"
-  type        = bool
-  default     = false
-}

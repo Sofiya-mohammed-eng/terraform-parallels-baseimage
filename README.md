@@ -82,7 +82,7 @@ with zero manual VM configuration in Parallels' GUI.
 - [x] DHCP server (isc-dhcp-server, valid subnet config, kept offline to avoid conflicting with host DHCP)
 - [ ] Additional server types
 - [x] Multi-environment support (dev/staging as separate Terraform states, each with independent VMs; state migrated to HCP Terraform for both)
-- [ ] Automated infrastructure testing (`terraform validate`, `tflint`, Terratest/InSpec)
+- [x] Automated infrastructure testing (`terraform validate` + `tflint` via `scripts/test-all.sh`, all directories passing)
 - [ ] CI pipeline (GitHub Actions) running plan/validate on every push
 
 ## Security notes

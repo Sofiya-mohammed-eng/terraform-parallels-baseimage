@@ -1,4 +1,6 @@
 terraform {
+  required_version = ">= 1.15.0"
+
   cloud {
     organization = "sofiya-sec"
 
@@ -9,7 +11,8 @@ terraform {
 
   required_providers {
     parallels-desktop = {
-      source = "Parallels/parallels-desktop"
+      source  = "Parallels/parallels-desktop"
+      version = "~> 0.7"
     }
   }
 }
